@@ -1,0 +1,6 @@
+Rescue Report
+
+RescueID  Date                Location                 Notes                         RescuedBy           Saved          
+------------------------------------------------------------------------------------------------------------------------
+1         2025-09-08          Dematagoda               Normal                        2                   1              
+2         2025-09-08          Dematagoda               Normal                        2                   2              

@@ -1,0 +1,283 @@
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 100%;
+  color: #333;
+  background-color: #f8f9fa;
+
+}
+
+/* Header */
+
+
+/* Form Section with Background Gradient + Paw Watermark */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6rem 2rem;
+  margin-top: 100px;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  overflow: hidden;
+}
+
+.form-section::before {
+  content: "🐾";
+  font-size: 600px;
+  color: rgba(255, 255, 255, 0.08);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Form Container */
+.form-container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #667eea;
+}
+
+.signup-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.signup-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.signup-form input,
+.signup-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.signup-form input:focus,
+.signup-form textarea:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 6px rgba(102,126,234,0.3);
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  font-size: 0.95rem;
+}
+
+.cta-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top: 2rem;
+}
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+/* Header */
+
+
+.navbar {
+  padding: 0rem ;
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height:50px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav-brand {
+  font-size:50px;
+  font-weight: 700;
+  margin-left:30px;
+  color: #667eea;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+
+
+/* Form Section with Background Gradient + Paw Watermark */
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:60px;
+  margin-top: 10px;
+  min-height: 100vh;
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  overflow: hidden;
+}
+
+.form-section::before {
+  content: "🐾";
+  font-size: 600px;
+  color: rgba(255, 255, 255, 0.08);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Form Container */
+.form-container {
+  background: #fff;
+  padding: 2rem 3rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #667eea;
+}
+
+.signup-form .form-group {
+  margin-bottom: 1.5rem;
+}
+
+.signup-form label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.signup-form input,
+.signup-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border 0.3s ease;
+}
+
+.signup-form input:focus,
+.signup-form textarea:focus {
+  border-color: #667eea;
+  outline: none;
+  box-shadow: 0 0 6px rgba(102,126,234,0.3);
+}
+
+.checkbox-group {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.checkbox-group label {
+  font-weight: normal;
+  font-size: 0.95rem;
+}
+
+.cta-button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, #ff6b6b 0%, #ee5a24 100%);
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 30px rgba(255, 107, 107, 0.4);
+}
+
+/* Footer */
+.footer {
+  background: #333;
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  margin-top:0px;;
+}

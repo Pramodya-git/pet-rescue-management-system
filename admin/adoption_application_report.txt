@@ -1,0 +1,6 @@
+Adoption Application Report
+
+ApplicationID       DateApplied         Status                   Preferences                   PetID               AdopterID      
+----------------------------------------------------------------------------------------------------------------------------------
+2                   2025-09-08          Approved                 Mixed                         1                   6              
+3                   2025-09-09          Approved                 cat                           1                   7              

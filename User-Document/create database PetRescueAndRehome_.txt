@@ -1,0 +1,62 @@
+create database PetRescueAndRehome_DB;
+use PetRescueAndRehome_DB;
+
+create table user(UserID int AUTO_INCREMENT,User_Name varchar(50) unique,Password varchar(30) unique,Role varchar(20),Email varchar(20) unique,Address varchar(50),Phone varchar(15) unique,primary key(UserID));
+
+create table Pets(PetID int AUTO_INCREMENT,Pet_Type varchar(20),Bread varchar(30),Age int(10),Gender varchar(15),Status varchar(50),Behavior varchar(50),Story varchar(50),photo LONGBLOB,primary key(PetID));
+
+create table Adoption_Application(ApplicationID int AUTO_INCREMENT,DateApplied date,Status varchar(50),Preferences varchar(20),primary key(ApplicationID),PetID int,AdopterID int,foreign key(PetID) references Pets(PetID),foreign key(AdopterID) references user(UserID));
+
+create table rescue(RescueID int AUTO_INCREMENT primary key,Date varchar(20),Location varchar(50),Notes varchar(100),RescuedBy int,Saved int unique,foreign key(RescuedBy) references user(UserID),foreign key(Saved) references pets(PetID));
+
+create table Adoption_Process(AdoptionID int AUTO_INCREMENT primary key,Payment int,AdoptionDate date,Meeting_Date date,Approval_Status varchar(50),ApplicationID int,foreign key(ApplicationID) references Adoption_Application(ApplicationID));
+
+create table Post_Adoption_Follow_Up(FollowUpID int AUTO_INCREMENT primary key,Reminder_Date date,Updates varchar(150),Feedback varchar(150),AdoptionID int,foreign key(AdoptionID) references Adoption_Process(AdoptionID));
+
+create table Foster(FosterID int AUTO_INCREMENT primary key,StartDate varchar(20),EndDate varchar(20) DEFAULT '0000-00-00',Address varchar(100),PetID int,CaregiverID int,foreign key(PetID) references pets(PetID),foreign key(CaregiverID) references user(UserID));
+
+create table MedicalRecord(RecordID int AUTO_INCREMENT primary key,Date varchar(20),healthcheck varchar(20),Vaccinations varchar(100),Treatments varchar(100),Surgeries varchar(100),PetID int,VetID int,foreign key(PetID) references Pets(PetID),foreign key(VetID) references user(UserID));
+
+CREATE TABLE notifications (
+    notifi_id INT AUTO_INCREMENT PRIMARY KEY,
+    message TEXT NOT NULL,
+    photo LONGBLOB,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    SenderID int,foreign key(SenderID) references user(UserID)
+);
+
+
+
+insert into user(User_Name,Password,Role,Email,Address,Phone)
+values('UOC','UOC','Admin','www.ucsc.cmb.ac.lk','Colombo 7','0704468988');
+
+insert into user(User_Name,Password,Role,Email,Address,Phone)
+values('UCSC','UCSC','Staff','kavishkapramodya1@gmail.com','No:21/1','0770695557');
+
+insert into user(User_Name,Password,Role,Email,Address,Phone)
+values('docter','docter','Rescue','kavishkapramodya0@gmail.com','No:21/0','0770245557');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

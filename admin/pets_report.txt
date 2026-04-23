@@ -1,0 +1,7 @@
+Pets Report
+
+PetID     Pet_Type            Breed                    Age                           Gender              Status         Behavior       Story          
+------------------------------------------------------------------------------------------------------------------------------------------------------
+3         Dog                 German Shepherd          2                             Female              D              Normal         D              
+4         Cat                 Persian                  2                             Male                Normal         Normal         No             
+7         Dog                 Corgi                    2                             Female              Normal         Normal         No             

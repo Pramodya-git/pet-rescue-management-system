@@ -1,0 +1,7 @@
+User Report
+
+UserID    UserName            Role      Email                         Address             Phone          
+---------------------------------------------------------------------------------------------------------
+2         UCSC                Staff     kavishkapramodya1@gm          No:21/1             0770695557     
+6         user                Client    user@gmail.com                Colombo 07          0704561235     
+8         UOC                 Admin     www.ucsc.cmb.ac.lk            Colombo 7           0704468988     
